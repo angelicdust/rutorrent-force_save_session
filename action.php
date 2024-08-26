@@ -48,4 +48,4 @@ else
 	$g_sFSS_Error = "Error when getting full hash list";
 }
 
-cachedEcho('{"status":'.$g_nFSS_Status.',"error":"'.$g_sFSS_Error.'","msg":"'.$g_sFSS_Msg.'"}',"application/json");
+CachedEcho::send('{"status":'.$g_nFSS_Status.',"error":"'.$g_sFSS_Error.'","msg":"'.$g_sFSS_Msg.'"}',"application/json");
